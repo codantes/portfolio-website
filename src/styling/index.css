@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400;500&family=Oswald:wght@200;500&family=Roboto+Serif:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif+Display:wght@400;500&family=Oswald:wght@200;500&family=Roboto+Serif:wght@300&display=swap');
 :root{
     --ebony: #281c2d;
     --violet: #281c2d;
@@ -8,6 +7,7 @@
     --oswald: 'Oswald', sans-serif;
     --roboto-serif: 'Roboto Serif', sans-serif;
     --noto-serif: 'Noto Serif Display', serif;
+    --anton: 'Anton', sans-serif;
 }
 
 body {
@@ -118,7 +118,14 @@ body {
 }
 
 .topnav{
-    color: var(--purple-haze);
+    color: white;
+    padding: 1rem 2rem;
+    font-family: var(--oswald);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
 }
 
 .main-menu{
@@ -126,29 +133,61 @@ body {
 }
 
 .logo{
+    font-family: var(--anton);
+    text-transform: capitalize;
+    color: white;
+    font-size: 16px;
+}
+
+.menu-icon{
     height: 3rem;
 }
 
-.hero article{
+.hero{
+    margin-bottom: 7rem;
     text-align: center;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
-.hero h1{
+.section-title{
     font-family: var(--oswald);
     font-size: 50px;
     text-transform: uppercase;
+    font-weight: 400;
     letter-spacing: 5px;
     margin: 0 auto;
+    color: whitesmoke;
 }
 
 .hero h2{
     font-family: var(--noto-serif);
-    font-size: 20px;
+    font-size: 30px;
     color: var(--muddy-purle);
+    text-transform: capitalize;
 }
 
 .hero img{
     height: 300px;
+    display: block;
     margin: 1rem auto;
+}
+
+.about{
+    text-align: center;
+    margin-bottom: 7rem;
+    padding: 0 2rem ;
+}
+
+.about h2{
+    font-family: var(--noto-serif);
+    color: var(--muddy-purle);
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.about p{
+    color: var(--purple-haze);
+    font-family: var(--roboto-serif);
+    font-size: 18px;
+    line-height: 2rem;
 }
