@@ -9,7 +9,7 @@ function About() {
                 <p>I make jaw-dropping UI for your web-apps and websites. I am also contiously learning about new technologies like Blockchain development, web3, defi etc. to provide best service possible. 
                 </p>
                 <p>
-                    These are the skills I am a bada*s with:
+                    These are the skills I am a <span>total bad*ss</span> at:
                 <ul className='skills'>
                         <li>HTML5</li>
                         <li>CSS3</li>
