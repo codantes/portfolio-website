@@ -4,6 +4,8 @@ import Navbar from './Navbar.js';
 import Background from './Background.js';
 import About from './About.js';
 import Projects from './Projects.js';
+import ContactSection from './ContactSection.js';
+
 function App(){
     return(
         <>
@@ -12,6 +14,7 @@ function App(){
         <Hero />
         <About />
         <Projects />
+        <ContactSection />
         </>
     )
 }
