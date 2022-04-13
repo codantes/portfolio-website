@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Nunito:wght@400;500&family=Quicksand:wght@400;500&display=swap');
+
+:root{
+    --heading:'Quicksand', sans-serif;
+    --subheading: 'Dosis', sans-serif;
+    --para: 'Nunito', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}

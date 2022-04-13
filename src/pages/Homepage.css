@@ -1,0 +1,80 @@
+header{
+
+}
+
+.banner{
+    text-align: center;
+}
+
+.banner article{
+    margin-block: 2rem;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.banner h1, .about-me h1{
+    font-family: var(--heading);
+    font-size: 60px;
+    letter-spacing: -3px;
+    line-height: 3.7rem;
+    color: rgb(123, 23, 23);
+    margin-block-end: 1rem;
+}
+
+.banner h2{
+    font-family: var(--subheading);
+    font-size: 30px;
+    color: brown;
+}
+
+.banner img{
+    height: 560px;
+}
+
+.about-me{
+    text-align: center;
+    margin-block: 3rem;
+}
+
+.about-me h1{
+    text-decoration: 5px underline rgb(123, 23, 23);
+}
+
+.about-me img{
+    height: 360px;
+    margin-block: 1rem;
+}
+
+.about-me article{
+    width: 80%;
+    margin-inline: auto;
+}
+
+.about-me article h2{
+    font-family: var(--subheading);
+    font-size: 30px;
+    color: brown;
+    margin-block: 1rem;
+}
+
+.about-me article p{
+    font-family: var(--para);
+    margin-block: 1rem;
+    font-size: 18px;
+    color: rgb(139, 55, 55);
+}
+
+
+.about-me article ul{
+    list-style-type: none;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.skills li{
+    border: 2px solid rgb(247, 234, 208);
+    background: rgb(247, 234, 208);
+    border-radius: 10px;
+}
