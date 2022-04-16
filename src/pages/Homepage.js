@@ -1,12 +1,10 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Background from '../components/Background';
 import ProjectCards from '../components/ProjectCards';
 import './Homepage.css';
 const Homepage = () => {
     return ( 
         <main>
-            <Background />
             <header>
             <Navbar />
                 <section className='banner'>
@@ -19,7 +17,7 @@ const Homepage = () => {
             </header>
             <section className='about-me'>
                 <h1>About Me</h1>
-                <img src="./images/man-with-phone-sitting.png" alt="" />
+                <img src="./images/man-with-phone.png" alt="" />
                 <article>
                     <h2>I am a frontend developer learning new skills at light-speed</h2>
                     <p>I make jaw-dropping UI for your web-apps and websites.I specialise in React.js. I am always experimenting with new front-end frameworks to be industry relevant. I am also continously learning about new technologies like Blockchain development, web3, defi etc. to provide best service possible.</p>
@@ -30,7 +28,7 @@ const Homepage = () => {
                             <li>CSS3</li>
                             <li>SCSS</li>
                             <li>Tailwind CSS</li>
-                            <li>Vanilla Javascript</li>
+                            <li>Javascript(ES6)</li>
                             <li>React.js</li>
                             <li>Figma</li>
                             <li>UI design</li>
@@ -41,9 +39,12 @@ const Homepage = () => {
                 </article>
             </section>
 
-            <section-projects>
-
-            </section-projects>
+            <section className='projects'>
+                <h1>Projects</h1>
+                <article>
+                    <ProjectCards />
+                </article>
+            </section>
         </main>
      );
 }

@@ -1,9 +1,18 @@
-header{
-
-}
+/*main{
+    background-image: url("/src/background/cool-background(1).png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}*/
 
 .banner{
     text-align: center;
+}
+
+header{
+    background: rgb(20, 216, 255);
+    background: radial-gradient(circle, var(--background-color) 0%, rgba(172,18,222,0) 74%); 
+    background-attachment: fixed; 
 }
 
 .banner article{
@@ -12,19 +21,18 @@ header{
     margin-inline: auto;
 }
 
-.banner h1, .about-me h1{
+.banner h1, .about-me h1, .projects h1{
     font-family: var(--heading);
-    font-size: 60px;
-    letter-spacing: -3px;
-    line-height: 3.7rem;
-    color: rgb(123, 23, 23);
+    font-size: 65px;
+    line-height: 4.5rem;
     margin-block-end: 1rem;
+    color: var(--heading-color);
 }
 
 .banner h2{
     font-family: var(--subheading);
     font-size: 30px;
-    color: brown;
+    color: var(--subheading-color);
 }
 
 .banner img{
@@ -33,15 +41,18 @@ header{
 
 .about-me{
     text-align: center;
-    margin-block: 3rem;
+    padding-block: 6rem;
+    background: rgb(20, 216, 255);
+    background: radial-gradient(circle, var(--background-color) 0%, rgba(172,18,222,0) 74%); 
+    background-attachment: fixed;
 }
 
 .about-me h1{
-    text-decoration: 5px underline rgb(123, 23, 23);
+    
 }
 
 .about-me img{
-    height: 360px;
+    height: 560px;
     margin-block: 1rem;
 }
 
@@ -53,7 +64,7 @@ header{
 .about-me article h2{
     font-family: var(--subheading);
     font-size: 30px;
-    color: brown;
+    color: var(--subheading-color);
     margin-block: 1rem;
 }
 
@@ -61,7 +72,7 @@ header{
     font-family: var(--para);
     margin-block: 1rem;
     font-size: 18px;
-    color: rgb(139, 55, 55);
+    color: var(--para-color);
 }
 
 
@@ -74,7 +85,26 @@ header{
 }
 
 .skills li{
-    border: 2px solid rgb(247, 234, 208);
-    background: rgb(247, 234, 208);
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.projects{
+    text-align: center;
+    padding-block: 3rem;
+    background: rgb(20, 216, 255);
+    background: radial-gradient(circle, var(--background-color) 0%, rgba(172,18,222,0) 74%); 
+    background-attachment: fixed;
+}
+
+.projects article{
+    width: 80%;
+    margin-inline: auto;
 }

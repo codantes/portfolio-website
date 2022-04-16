@@ -1,19 +1,22 @@
 import React from 'react';
+import ProjectModal from './ProjectModal';
+import projectData from "./projectData.js";
 
 function ProjectCards(props) {
+    const data = projectData.map( project => {
+        return (
+            <ProjectModal
+            title = {project.title}
+            key = {project.id}
+            info = {project.info}
+            tech = {project.techStack}
+            img = {project.faviconImg}
+        />
+        )
+    })
     return(
         <section className="card">
-            <a href={props.siteLink}><img src={props.image} alt="" /></a>
-            <article>
-            <h1>{props.title}</h1>
-            <p>{props.projectInfo}</p>
-            <p className='techstack'>This is the tech stack I used: {props.techStack}</p>
-            <p className='built-time'>Time taken to Build: {props.time}</p>
-            <section>
-                <a href={props.github}>Github</a>
-                <a href={props.siteLink}>site</a>
-            </section>
-            </article>
+            {data}
         </section>
     )
 }
