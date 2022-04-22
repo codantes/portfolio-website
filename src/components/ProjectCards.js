@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectModal from './ProjectModal';
 import projectData from "./projectData.js";
+import './ProjectCards.css';
 
 function ProjectCards(props) {
     const data = projectData.map( project => {
@@ -11,11 +12,16 @@ function ProjectCards(props) {
             info = {project.info}
             tech = {project.techStack}
             img = {project.faviconImg}
+            siteLink = {project.liveSite}
+            github = {project.gitHub}
+            time = {project.builtTime}
+            techStack = {project.techStack}
+            upcoming = {project.upcomingFeatures}
         />
         )
     })
     return(
-        <section className="card">
+        <section className="cards">
             {data}
         </section>
     )

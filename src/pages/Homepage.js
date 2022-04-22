@@ -17,6 +17,7 @@ const Homepage = () => {
             </header>
             <section className='about-me'>
                 <h1>About Me</h1>
+                <section className="about-me-content">
                 <img src="./images/man-with-phone.png" alt="" />
                 <article>
                     <h2>I am a frontend developer learning new skills at light-speed</h2>
@@ -37,6 +38,7 @@ const Homepage = () => {
                         </ul>
                     </p>
                 </article>
+                </section>
             </section>
 
             <section className='projects'>
@@ -44,6 +46,28 @@ const Homepage = () => {
                 <article>
                     <ProjectCards />
                 </article>
+            </section>
+
+            <section className="contact">
+                <h1>Let's Connect!</h1>
+                <section>
+                <div className="socials">
+                    <a href="www.twitter.com/codantes"><img src="/images/socials/icons8-twitter-100.png" alt="" /></a>
+                    <h2>twitter</h2>
+                </div>
+                <div className="socials">
+                    <a href="https://www.linkedin.com/in/pranav-kumar-311574162/"><img src="/images/socials/icons8-linkedin-100.png" alt="" /></a>
+                    <h2>linkedin</h2>
+                </div>
+                <div className="socials">
+                    <a href="www.github.com/codantes"><img src="/images/socials/icons8-github-100.png" alt="" /></a>
+                    <h2>github</h2>
+                </div>
+                <div className="socials">
+                    <a href="mailto:pranavismic@gmail.com"><img src="/images/socials/icons8-mail-100.png" alt="" /></a>
+                    <h2>mail</h2>
+                </div>
+                </section>
             </section>
         </main>
      );

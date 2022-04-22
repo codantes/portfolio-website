@@ -4,10 +4,10 @@
     --heading: 'Cairo', sans-serif;
     --subheading: 'Oxygen', sans-serif;
     --para: 'Titillium Web', sans-serif;
-    --heading-color: rgb(26, 67, 125);
-    --subheading-color: rgb(35, 96, 154);
-    --para-color: rgb(59, 86, 110);
-    --background-color: rgba(20, 200, 255, 0.692);
+    --heading-color: rgb(255, 94, 0);
+    --subheading-color: rgb(255, 166, 0);
+    --para-color: rgb(110, 97, 59);
+    --background-color: rgb(251, 251, 0);
 }
 
 * {

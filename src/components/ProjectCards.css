@@ -1,0 +1,10 @@
+@media (min-width: 800px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 75%;
+        margin-inline: auto;
+    }
+}

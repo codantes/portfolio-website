@@ -1,4 +1,4 @@
-.project-modal img{
+.project-modal .project-img{
     height: 100px;
     border: 3px solid white;
     padding: 4rem;
@@ -11,31 +11,120 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin-block:2rem;
     border-radius: 10px;
+    
 }
 
-.project-modal{
+.project-modal .display-card{
     position: relative;
 }
 
-.project-modal article {
-    z-index: 2;
+.project-modal .overlay-1{
     position: absolute;
+    display: grid;
+    z-index: 2;
+    color: rgba(0, 0, 0, 0);
+    font-family: var(--para);
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    height: 235px;
+    width: 235px;
+    top: 10%;
+    left: 11%;
+    transition: ease all 0.2s;
+    align-items: center;
+    cursor: pointer;
+}
+
+.project-modal .overlay-1:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+}
+
+.project-modal .overlay-2{
+    z-index: 3;
+    position: fixed;
+    top:0%;
+    left: 0%;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.project-modal article {
+    z-index: 4;
+    position: fixed;
     background: white;
     padding: 1rem;
-    top: 5%;
+    top:8%;
+    left: 4%;
     border-radius: 10px;
-    background: rgb(247, 234, 208);
-    padding: 2rem;
+    background: rgb(203, 169, 35);
+    padding: 1.5rem;
 }
 
 .project-modal article h2{
     font-family: var(--heading);
     font-size: 20px;
-    color: var(--heading-color);
+    color: rgb(143, 79, 6);
 }
 
 .project-modal article p{
     font-family: var(--para);
     margin-block: 1rem;
-    color: var(--para-color);
+    color: rgb(143, 79, 6);
+}
+
+.modal nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-block-end: 0.5rem;
+}
+
+.modal nav img{
+    height: 20px;
+    cursor: pointer;
+}
+
+.tech-stack ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.upcoming ul{
+    list-style-type: none;
+}
+
+.tech-stack ul li{
+    background: white;
+    color: rgb(143, 79, 6);
+    padding: 0.3rem;
+    margin-inline: 0.1rem;
+    margin-block: 0.2rem;
+    border-radius: 5px;
+}
+
+.site-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-links a{
+    margin-block: .3rem;
+    color: rgb(143, 79, 6);
+    font-family: var(--subheading);
+}
+@media (min-width: 800px){
+    .project-modal .overlay-1{
+        left: 0%;
+    }
+
+    .project-modal .modal article{
+        top: 18%;
+        left: 30%;
+        width: 500px;
+    }
 }

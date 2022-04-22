@@ -1,10 +1,3 @@
-/*main{
-    background-image: url("/src/background/cool-background(1).png");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}*/
-
 .banner{
     text-align: center;
 }
@@ -21,7 +14,7 @@ header{
     margin-inline: auto;
 }
 
-.banner h1, .about-me h1, .projects h1{
+.banner h1, .about-me h1, .projects h1, .contact h1{
     font-family: var(--heading);
     font-size: 65px;
     line-height: 4.5rem;
@@ -45,10 +38,6 @@ header{
     background: rgb(20, 216, 255);
     background: radial-gradient(circle, var(--background-color) 0%, rgba(172,18,222,0) 74%); 
     background-attachment: fixed;
-}
-
-.about-me h1{
-    
 }
 
 .about-me img{
@@ -96,7 +85,7 @@ header{
     padding: 0.5rem;
 }
 
-.projects{
+.projects, .contact{
     text-align: center;
     padding-block: 3rem;
     background: rgb(20, 216, 255);
@@ -107,4 +96,87 @@ header{
 .projects article{
     width: 80%;
     margin-inline: auto;
+}
+
+.socials img{
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    height: 50px;
+}
+
+.socials img:hover{
+    height: 55px;
+}
+
+.socials h2{
+    font-family: var(--subheading);
+    font-size: 16px;
+    color: var(--subheading-color);
+}
+
+.contact section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-block: 3rem;
+}
+
+@media (min-width: 700px){
+    .banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 75%;
+        margin-inline: auto;
+        align-items: center;
+    }
+
+    .banner img{
+        margin-inline-start: 35%;
+    }
+
+    .banner article{
+        text-align: left;
+    }
+
+    .banner article h1{
+        font-size: 90px;
+        line-height: 6rem;
+    }
+
+    .banner article h2{
+        font-size: 40px;
+    }
+
+    .about-me-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 75%;
+        margin-inline: auto;
+    }
+
+    .about-me-content img{
+        margin-inline-start: 15%;
+    }
+
+    .about-me-content article{
+        text-align: left;
+    }
+    
+    .contact section{
+        width: 50%;
+        margin-inline: auto;
+        margin-block: 3rem;
+    }
+
+    .contact .socials img{
+        height: 80px;
+    }
+
+    .contact .socials img:hover{
+        height: 85px;
+    }
 }

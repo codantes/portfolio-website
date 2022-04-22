@@ -3,12 +3,9 @@ export default [
         "id" : 1,
         "title": "Cointrail-cryptocurrency tracking web application",
         "faviconImg": "/images/project-logos/cointrail-logo.png",
-        "info":[
-            "uses 3rd party API to track top 10 coins in the market.",
-            "explains common crypto terminlogies to get started with crypto trading.",
-        ],
+        "info": "Uses 3rd party API to track the top 10 coins in the market. Explains common cryptocurrency terminologies to get started with trading cryptocurrencies",
         "gitHub":"",
-        "liveSite": "cointrail.netlify.app",
+        "liveSite": "https://cointrail.netlify.app/",
         "builtTime": "48hrs",
         "techStack":[
             "React.js",
@@ -30,7 +27,7 @@ export default [
             "Made for beginners and intermediates to make their workouts easier.",
         ],
         "gitHub":"",
-        "liveSite": "strength-webapp.netlify.app",
+        "liveSite": "https://strength-webapp.netlify.app/",
         "builtTime": "56hrs",
         "techStack":[
             "React.js",
@@ -44,13 +41,13 @@ export default [
     },
     {
         "id" : 3,
-        "title": "sneakers- ecommerce product page",
+        "title": "sneakers- eCommerce product page",
         "faviconImg": "/images/project-logos/icons8-sneakers-64.png",
         "info":[
-            "A product page for your sneakers, includes image slider, cart and checkout box",
+            "A product page for your sneakers, includes an image slider, a cart and a checkout box",
         ],
         "gitHub":"",
-        "liveSite": "sneaker-webapp.netlify.app",
+        "liveSite": "https://sneaker-webapp.netlify.app/",
         "builtTime": "50hrs",
         "techStack":[
             "React.js",
@@ -58,7 +55,7 @@ export default [
             "CSS3",
         ],
         "upcomingFeatures": [
-            "complete ecommerce store",
+            "complete eCommerce store",
         ]
     },
     {
@@ -66,11 +63,11 @@ export default [
         "title": "Bongle maps- google maps clone",
         "faviconImg": "/images/project-logos/icons8-world-map-64.png",
         "info":[
-            "seacrh places and routes just like google maps.",
-            "uses 3rd party API for geolocation."
+            "Search places and routes just like google maps.",
+            " Uses 3rd party API for geolocation."
         ],
         "gitHub":"",
-        "liveSite": "bonglemaps.netlify.app",
+        "liveSite": "https://bonglemaps.netlify.app/",
         "builtTime": "5hrs",
         "techStack":[
             "Javascript",
@@ -91,7 +88,7 @@ export default [
             "Mock website for a space exploration startup",
         ],
         "gitHub":"",
-        "liveSite": "space-exploration-startup.netlify.app",
+        "liveSite": "https://space-exploration-startup.netlify.app/",
         "builtTime": "20hrs",
         "techStack":[
             "Javascript",

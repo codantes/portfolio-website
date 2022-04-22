@@ -2,20 +2,11 @@ import React from 'react';
 import './Navbar.css';
 
 function Navbar() {
-    const [screenWidth , setScreenWidth] = React.useState(window.innerWidth)
-    React.useEffect(() => {
-        
-        function changeWidth() {
-            setScreenWidth(window.innerWidth);
-        }
-
-        window.addEventListener('resize', changeWidth);
-    }, [])
 
     return(
         <nav className='topnav'>
             <div className='logo'>
-                <h1>Pranav</h1>
+                <a href="https://skillful-hippodraco-962.notion.site/Resume-999a1c60db4e4b1ba7097a659edc6c95"><h1>Resume</h1></a>
             </div>
         </nav>
     )
